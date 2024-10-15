@@ -87,7 +87,8 @@ export const Navbar = () => {
         {/* Menú Mobile */}
         <GiHamburgerMenu 
           onClick={handleMenuOpen}
-          className="my-auto w-fit text-[35px] text-black-base me-4 max-sm:flex hidden"
+          className="my-auto w-fit text-[35px] text-black-base me-4 max-sm:flex hidden
+            hover:text-gold-base"
         />
         
         {isMenuOpen ? 
