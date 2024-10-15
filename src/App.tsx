@@ -2,6 +2,7 @@ import { Home } from './pages/Home'
 import { Navbar } from './components/Navbar/Navbar'
 import { PlayersPage } from './pages/Players'
 import { PlayerProfile } from './pages/PlayerProfile'
+import { ContactPage } from './pages/Contact'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import ScrollToTop from './utils/ScrollToTop'
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/jugadores" element={<PlayersPage />} />
           <Route path="/jugadores/:playerID/:nombre" element={<PlayerProfile />} />
+          <Route path="/contacto" element={<ContactPage />} />
         </Routes>
       </BrowserRouter>
     </>

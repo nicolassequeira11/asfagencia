@@ -31,7 +31,7 @@ export const Navbar = () => {
   ]
 
   const handleMenuOpen = () => {
-    setIsMenuOpen((prev) => !prev); // Alternar el estado
+    setIsMenuOpen((prev) => !prev) // Alternar el estado
   };
 
   const handleClickLink = () => {
@@ -40,10 +40,13 @@ export const Navbar = () => {
 
   return(
     <header>
-      <nav className="flex py-6 text-center font-montserrat max-sm:justify-between">
+      <nav 
+        className="flex py-6 text-center font-montserrat max-sm:justify-between
+          fixed top-0 w-full z-50 shadow-md bg-white bg-opacity-95"
+      >
 
         {/* Logo */}
-        <div className="w-1/4 my-auto max-sm:w-fit max-sm:ms-4">
+        <div className="w-1/4 my-auto max-sm:w-fit max-sm:ms-6">
           <p className="my-auto text-[30px] font-[800] max-sm:text-[20px]">
             ASF Agencia
           </p>
@@ -55,7 +58,7 @@ export const Navbar = () => {
             <Link 
               key={index} 
               to={item.link}
-              className="text-[17px] "
+              className="text-[17px] hover:text-gold-dark"
             >
               {item.name}
             </Link>
@@ -87,7 +90,7 @@ export const Navbar = () => {
         {/* Menú Mobile */}
         <GiHamburgerMenu 
           onClick={handleMenuOpen}
-          className="my-auto w-fit text-[35px] text-black-base me-4 max-sm:flex hidden
+          className="my-auto w-fit text-[35px] text-black-base me-6 max-sm:flex hidden
             hover:text-gold-base"
         />
         
@@ -100,7 +103,7 @@ export const Navbar = () => {
                 key={index} 
                 to={item.link}
                 onClick={handleClickLink}
-                className="text-[25px] py-[10px] font-[600] 
+                className="text-[22px] py-[10px] font-[600] 
                   text-white hover:text-gold-base active:text-gold-dark"
               >
                 {item.name}

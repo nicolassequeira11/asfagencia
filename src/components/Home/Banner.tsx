@@ -6,7 +6,7 @@ export const BannerHome = () => {
   return(
     <div 
       className="bg-gradient-to-b from-gray-700 to-black-dark h-[85vh] relative font-montserrat
-        max-sm:h-[80vh]"
+        max-sm:h-[80vh] mt-[93px] max-md:mt-[84px]"
     >
 
       {/* Background img */}

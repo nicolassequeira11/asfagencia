@@ -18,7 +18,7 @@ export const PlayerProfile = () => {
   }
 
   return(
-    <div className="font-montserrat">
+    <div className="font-montserrat mt-[93px] max-md:mt-[84px]">
       <div className="mb-8">
         {/* Nombre */}
         <h1 
