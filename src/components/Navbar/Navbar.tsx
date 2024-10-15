@@ -64,22 +64,30 @@ export const Navbar = () => {
 
         {/* Redes */}
         <div className="w-1/4 flex mx-auto justify-center gap-[10px] my-auto max-sm:hidden">
-          <div className="bg-gold-dark p-2 rounded-full text-white">
+          <a 
+            href="" 
+            target="_blank" 
+            className="bg-gold-base hover:bg-gold-dark p-2 rounded-full text-white"
+          >
             <FaInstagram 
               className="size-5" 
             />
-          </div>
-          <div className="bg-gold-dark p-2 rounded-full text-white">
+          </a>
+          <a 
+            href="" 
+            target="_blank" 
+            className="bg-gold-base hover:bg-gold-dark p-2 rounded-full text-white"
+          >
             <FaWhatsapp 
               className="size-5" 
             />
-          </div>
+          </a>
         </div>
 
         {/* Menú Mobile */}
         <GiHamburgerMenu 
           onClick={handleMenuOpen}
-          className="my-auto w-fit text-[35px] text-black-base me-4"
+          className="my-auto w-fit text-[35px] text-black-base me-4 max-sm:flex hidden"
         />
         
         {isMenuOpen ? 
