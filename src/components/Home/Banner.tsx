@@ -5,8 +5,8 @@ import ImgBannerHome from "../../assets/banner-home.jpg"
 export const BannerHome = () => {
   return(
     <div 
-      className="bg-gradient-to-b from-gray-700 to-black-dark h-[85vh] relative font-montserrat
-        max-sm:h-[80vh] mt-[93px] max-md:mt-[84px]"
+      className="bg-gradient-to-b from-gray-700 to-black-dark h-[40vh] relative font-montserrat
+        max-sm:h-[60vh] mt-[93px] max-md:mt-[84px]"
     >
 
       {/* Background img */}
@@ -16,7 +16,7 @@ export const BannerHome = () => {
         className="h-full w-full object-cover opacity-20" 
       />
 
-      <div className="w-11/12 flex mx-auto absolute bottom-0 left-0 right-0 max-sm:flex-col">
+      <div className="w-10/12 h-full flex mx-auto absolute bottom-0 left-0 right-0 max-sm:flex-col">
 
         {/* Slogan */}
         <div className="w-1/2 my-auto max-sm:w-11/12 max-sm:mx-auto">

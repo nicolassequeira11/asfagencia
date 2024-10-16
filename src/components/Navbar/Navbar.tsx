@@ -46,11 +46,14 @@ export const Navbar = () => {
       >
 
         {/* Logo */}
-        <div className="w-1/4 my-auto max-sm:w-fit max-sm:ms-6">
+        <Link 
+          to="/" 
+          className="w-1/4 my-auto max-sm:w-fit max-sm:ms-6"
+        >
           <p className="my-auto text-[30px] font-[800] max-sm:text-[20px]">
             ASF Agencia
           </p>
-        </div>
+        </Link>
 
         {/* Links */}
         <div className="w-2/4 my-auto grid grid-cols-5 max-sm:hidden">

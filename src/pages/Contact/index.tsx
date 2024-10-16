@@ -4,12 +4,12 @@ import { FaInstagram } from "react-icons/fa";
 
 export const ContactPage = () => {
   return(
-    <div className="mt-[93px] mb-20 font-montserrat">
+    <div className="mt-[93px] max-md:mt-[84px] mb-20 font-montserrat">
       <h1 
-        className="text-[40px] font-[800] text-center border-b-4 border-gold-base w-fit mx-auto pt-8 mb-8
-          max-sm:text-[28px]"
+        className="font-[800] text-[30px] w-full mx-auto text-center 
+          mb-6 bg-gold-base py-4 text-white max-sm:text-[24px]"
       >
-        ¡Contáctanos!
+        ¡CONTÁCTANOS!
       </h1>
 
       {/* Descripción */}
@@ -26,7 +26,7 @@ export const ContactPage = () => {
         {/* Botón correo */}
         <div 
           className="w-full flex gap-10 flex-col px-4 py-6 mx-auto text-center 
-            shadow-[rgba(0,0,0,_0.1)_0px_9px_30px] rounded-[25px] mt-6"
+            shadow-[rgba(0,0,0,_0.05)_0px_9px_30px] rounded-[25px] mt-6"
         >
           <a 
             href="mailto:elcorreoquequieres@correo.com"
@@ -51,7 +51,7 @@ export const ContactPage = () => {
         {/* Botón numero */}
         <div 
           className="w-full flex gap-10 flex-col px-4 py-6 mx-auto text-center 
-            shadow-[rgba(0,0,0,_0.1)_0px_9px_30px] rounded-[25px] mt-6"
+            shadow-[rgba(0,0,0,_0.05)_0px_9px_30px] rounded-[25px] mt-6"
         >
           <a 
             href="mailto:elcorreoquequieres@correo.com"
@@ -76,7 +76,7 @@ export const ContactPage = () => {
         {/* Botón Instagram */}
         <div 
           className="w-full flex gap-10 flex-col px-4 py-6 mx-auto text-center 
-            shadow-[rgba(0,0,0,_0.1)_0px_9px_30px] rounded-[25px] mt-6"
+            shadow-[rgba(0,0,0,_0.05)_0px_9px_30px] rounded-[25px] mt-6"
         >
           <a 
             href="mailto:elcorreoquequieres@correo.com"

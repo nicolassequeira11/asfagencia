@@ -193,9 +193,8 @@ export const PlayerProfile = () => {
         {player.highlights ? 
           <div className="mx-auto w-full my-20">
             <p 
-              className="font-[700] text-[30px] w-fit mx-auto text-center 
-                border-b-4 border-gold-base mb-6
-                max-sm:text-[28px]"
+              className="font-[800] text-[30px] w-full mx-auto text-center 
+                mb-10 bg-gold-base py-4 text-white max-sm:text-[24px]"
             >
               HIGHLIGHTS
             </p>

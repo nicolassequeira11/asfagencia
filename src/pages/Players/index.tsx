@@ -14,7 +14,14 @@ interface PlayersProps {
 
 export const PlayersPage = () => {
   return(
-    <div className="mt-[93px] max-md:mt-[84px]">
+    <div className="mt-[93px] max-md:mt-[84px] font-montserrat">
+      <h1 
+        className="font-[800] text-[30px] w-full mx-auto text-center 
+          mb-6 bg-gold-base py-4 text-white max-sm:text-[24px]"
+      >
+        JUGADORES
+      </h1>
+
       <div className="flex flex-wrap w-full mx-auto justify-center py-6">  
         {PlayersData.players.map((player:PlayersProps, index:number) => (
           <PlayerCard
