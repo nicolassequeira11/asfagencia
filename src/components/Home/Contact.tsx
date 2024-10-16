@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 export const Contact = () => {
   return(
-    <div className="font-montserrat bg-black-dark relative">
+    <div className="font-montserrat bg-black-dark relative mt-20">
       <img 
         src={BackgroundContact} 
         alt="ASF Agencia de Fútbol" 

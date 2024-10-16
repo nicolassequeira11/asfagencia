@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 interface PlayerCardProps {
   portada: string;
@@ -15,7 +16,8 @@ export const PlayerCard: React.FC<PlayerCardProps> = (
     {portada, nombre, clubActual, pais, edad, altura, posicion, playerID}
   ) => {
 
-  const formattedName = nombre.toLowerCase().replace(/\s+/g, '-');
+  const [isHovered, setIsHovered] = useState(false)
+  const formattedName = nombre.toLowerCase().replace(/\s+/g, '-')
   
   return(
     <Link 
@@ -23,7 +25,9 @@ export const PlayerCard: React.FC<PlayerCardProps> = (
       className="h-[320px] w-[250px] font-montserrat flex m-3"
     >
       <div 
-        className="mx-auto w-full rounded-[10px] relative overflow-hidden
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        className="mx-auto w-full rounded-[15px] relative overflow-hidden
           bg-black hover:bg-gold-base"
       >
         <img 
@@ -37,8 +41,9 @@ export const PlayerCard: React.FC<PlayerCardProps> = (
           className="absolute right-3 top-3 w-[35px]" 
         />
         <div 
-          className="absolute bottom-0 py-5 w-full
-            bg-gradient-to-t to-transparent from-black-dark hover:from-gold-dark pt-10"
+          className={`absolute bottom-0 py-5 w-full
+            bg-gradient-to-t to-transparent from-black-dark pt-10
+            ${isHovered ? 'from-gold-dark' : ''}`}
         >
           {/* Nombre */}
           <p className="w-full text-white text-center pt-2 font-[600] text-[19px]">

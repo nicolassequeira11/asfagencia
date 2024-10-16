@@ -4,7 +4,7 @@ import { FaInstagram } from "react-icons/fa";
 
 export const ContactPage = () => {
   return(
-    <div className="mt-[93px] max-md:mt-[84px] mb-20 font-montserrat">
+    <div className="mt-[94px] max-md:mt-[84px] mb-20 font-montserrat">
       <h1 
         className="font-[800] text-[30px] w-full mx-auto text-center 
           mb-6 bg-gold-base py-4 text-white max-sm:text-[24px]"
@@ -38,13 +38,13 @@ export const ContactPage = () => {
             />
             <p>asfagencia@hotmail.com</p>
             
-            <a 
+            {/* <a 
               href="mailto:sadasd@hotmail.com"
               className="text-[18px] font-[700] text-center flex justify-center text-white mt-4 w-fit mx-auto
                 bg-gradient-to-tl from-gold-base to-gold-light hover:to-gold-dark px-6 py-3 rounded-full"
             >
               Enviar correo
-            </a>
+            </a> */}
           </a>
         </div>
 
@@ -63,13 +63,13 @@ export const ContactPage = () => {
             />
             <p>+598 099 111 222</p>
             
-            <a 
+            {/* <a 
               href="mailto:sadasd@hotmail.com"
               className="text-[18px] font-[700] text-center flex justify-center text-white mt-4 w-fit mx-auto
                 bg-gradient-to-tl from-gold-base to-gold-light hover:to-gold-dark px-6 py-3 rounded-full"
             >
               Llamar
-            </a>
+            </a> */}
           </a>
         </div>
 
@@ -88,13 +88,13 @@ export const ContactPage = () => {
             />
             <p>@drsobrinoalejandro</p>
             
-            <a 
+            {/* <a 
               href="mailto:sadasd@hotmail.com"
               className="text-[18px] font-[700] text-center flex justify-center text-white mt-4 w-fit mx-auto
                 bg-gradient-to-tl from-gold-base to-gold-light hover:to-gold-dark px-6 py-3 rounded-full"
             >
               Enviar mensaje
-            </a>
+            </a> */}
           </a>
         </div>
       </div>

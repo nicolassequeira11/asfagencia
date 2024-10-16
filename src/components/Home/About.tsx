@@ -19,7 +19,7 @@ export const About = () => {
           <p className="font-[400] text-[18px] max-sm:text-center">
             Abogado Especialista en Derecho Deportivo | Agente FIFA
           </p>
-          <p className="mt-2 max-sm:text-justify max-sm:mx-auto max-sm:mt-6 max-sm:text-[14px]">
+          <p className="mt-2 max-sm:text-justify max-sm:mx-auto max-sm:mt-6">
             Alejandro Sobrino es un reconocido agente de fútbol con una sólida formación en derecho deportivo. Su experiencia como abogado especializado le permite ofrecer un enfoque integral y estratégico en la representación de atletas, asegurando que sus intereses estén siempre protegidos.
           </p>
         </div>
