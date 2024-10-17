@@ -126,7 +126,7 @@ export const PlayersPage = () => {
           <FaSearch 
             className="size-[80px] text-gold-base mx-auto"
           />
-          <p className="text-center mt-8 text-[26px]">
+          <p className="text-center mt-8 text-[26px] max-sm:text-[22px] max-sm:w-11/12 max-sm:mx-auto">
             No se encontrarón jugadores. Por favor cambie los filtros seleccionados.
           </p>
         </div> 
