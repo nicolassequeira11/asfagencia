@@ -300,7 +300,11 @@ export const PlayersData = {
       portada: PortadaMatiasSantos,
       imagenes: [
 
-      ]
+      ],
+      review: [
+        "Alejandro y yo tenemos una relación especial porque, antes de ser mi representante, fue y es mi amigo. Empezamos como vecinos y nuestras familias se volvieron cercanas. Cuando atravesé una situación complicada en México, mi representante me abandonó, pero Alejandro me ayudó a retomar mi carrera en Uruguay, en Defensor Sp. Desde entonces, seguimos trabajando juntos. Ha estado conmigo en todos los lugares donde jugué y, recientemente, me visitó en Chile. Confío plenamente en él, ya que entiende cómo pienso y veo el fútbol, lo que me da mucha tranquilidad. Lo que más valoro de él es la confianza."
+      ],
+      titleReview: "Jugador profesional"
     },
     {
       id: 12,

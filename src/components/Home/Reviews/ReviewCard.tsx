@@ -1,5 +1,5 @@
 interface ReviewProps {
-  texto: string;
+  texto: string[];
   nombre: string;
   titulo: string;
   img: string;
@@ -7,7 +7,7 @@ interface ReviewProps {
 
 export const ReviewCard: React.FC<ReviewProps> = ({texto, nombre, titulo, img}) => {
   return(
-    <div className="w-6/12 max-md:w-10/12 mx-auto flex justify-center gap-8 font-montserrat max-md:flex-col">
+    <div className="w-full max-md:w-10/12 mx-auto flex justify-center gap-8 font-montserrat max-md:flex-col">
       {/* Imagen */}
       <div className="h-full max-md:w-full">
         <div className="w-[170px] h-[170px]">
@@ -20,9 +20,13 @@ export const ReviewCard: React.FC<ReviewProps> = ({texto, nombre, titulo, img}) 
       </div>
       
       {/* Reseña */}
-      <div className="w-3/4 max-md:w-full">
+      <div className="w-[500px] max-md:w-full">
         <p className="text-justify text-[14px] max-sm:text-[16px] italic">
-          "{texto}"
+          {texto.map((item:string, index:number) => (
+            <p key={index} className="mb-2">
+              {item}
+            </p>
+          ))}
         </p>
         <p className="font-[600] text-[18px] mt-4 leading-[20px]">
           {nombre}

@@ -23,13 +23,13 @@ export const BannerHome = () => {
 
         {/* Slogan */}
         <div className="w-1/2 only:md:my-0 only:lg:my-0 my-auto max-lg:w-11/12 max-lg:mx-auto">
-          <p className="text-white text-[38px] font-[600] max-xl:text-[32px]">
+          <p className="text-white text-[38px] font-[600] max-xl:text-[32px] fadein">
             Protegiendo tus derechos, potenciando tu carrera.
           </p>
         </div>
 
         {/* Logos */}
-        <div className="w-1/2 only:md:my-0 only:lg:my-0 my-auto max-md:gap-10 flex max-lg:w-11/12 max-lg:mx-auto">
+        <div className="w-1/2 fadein only:md:my-0 only:lg:my-0 my-auto max-md:gap-10 flex max-lg:w-11/12 max-lg:mx-auto">
 
           {/* FIFA Agent */}
           <div className="w-1/2">

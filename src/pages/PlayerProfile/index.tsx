@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { PlayersData } from "../../data/players";
+import { ReviewCard } from "../../components/Home/Reviews/ReviewCard";
 
 import { CiCalendarDate } from "react-icons/ci";
 import { GiBodyHeight } from "react-icons/gi";
@@ -31,7 +32,7 @@ export const PlayerProfile = () => {
         {/* Info */}
         <div 
           className="flex w-[70rem] max-w-[90vw] mx-auto gap-6 mt-10
-            max-md:flex-col max-md:mt-6"
+            max-md:flex-col max-md:mt-6 fadein"
         >
 
           {/* Portada */}
@@ -208,6 +209,24 @@ export const PlayerProfile = () => {
               allowFullScreen
               className="mx-auto max-md:w-11/12 max-sm:h-[200px]"
             ></iframe>
+          </div>
+        : ""}
+
+        {/* Reseña */}
+        {player.review ? 
+          <div>
+            <p 
+              className="font-[800] text-[30px] w-full mx-auto text-center 
+                mb-10 bg-gold-base py-4 text-white max-sm:text-[24px]"
+            >
+              TESTIMONIO
+            </p>
+            <ReviewCard
+              texto={player.review}
+              titulo={player.titleReview}
+              nombre={player.nombre}
+              img={player.portada}
+            />
           </div>
         : ""}
       </div>
