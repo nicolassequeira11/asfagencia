@@ -41,7 +41,7 @@ export const AboutPage = () => {
   ]
 
   return(
-    <div className="mt-[94px] max-md:mt-[84px] font-montserrat">
+    <div className="mt-[94px] max-lg:mt-[84px] font-montserrat">
       <h2 
         className="font-[800] text-[30px] w-full mx-auto text-center 
           mb-6 bg-gold-base py-4 text-white max-sm:text-[24px]"
@@ -55,7 +55,7 @@ export const AboutPage = () => {
         {sobreNosotros.map((item:SobreNosotrosItem, index:number) => (
           <div 
             key={index} 
-            className='w-9/12 mb-14 mx-auto flex gap-8 max-sm:flex-col max-sm:w-10/12'
+            className='w-9/12 mb-14 mx-auto flex gap-8 max-md:flex-col max-sm:w-10/12'
           >
             <div className='text-gold-base max-sm:mx-auto'>
               {item.icono}

@@ -18,37 +18,37 @@ export const PlayerProfile = () => {
   }
 
   return(
-    <div className="font-montserrat mt-[94px] max-md:mt-[84px]">
+    <div className="font-montserrat mt-[94px] max-lg:mt-[84px]">
       <div className="mb-8">
         {/* Nombre */}
         <h1 
           className="text-[50px] font-[800] text-center text-white py-4 bg-black-base
-            max-sm:text-[28px]"
+            max-md:text-[28px]"
         >
           {player.nombre}
         </h1>
 
         {/* Info */}
         <div 
-          className="flex w-[70rem] max-w-full mx-auto gap-6 mt-10
-            max-sm:flex-col max-sm:mt-6"
+          className="flex w-[70rem] max-w-[90vw] mx-auto gap-6 mt-10
+            max-md:flex-col max-md:mt-6"
         >
 
           {/* Portada */}
           <div 
             className="w-4/12 h-[510px] border-4 border-gold-base
-              max-sm:w-11/12 max-sm:mx-auto"
+              max-md:w-fit max-md:mx-auto"
           >
             <img 
               src={player.portada} 
               alt={player.nombre} 
-              className="h-full object-cover" 
+              className="h-full object-cover mx-auto" 
             />
           </div>
 
           <div 
             className="flex flex-col w-8/12 
-              max-sm:w-11/12 max-sm:mx-auto"
+              max-md:w-11/12 max-md:mx-auto"
           >
 
             {/* Equipo actual */}
@@ -74,7 +74,7 @@ export const PlayerProfile = () => {
                 <div 
                   className="my-auto me-3"
                 >
-                  <p className="text-[24px] font-[700] text-end max-sm:text-[18px]">
+                  <p className="text-[24px] font-[700] text-end max-md:text-[18px]">
                     {player.clubActual[0].nombre}
                   </p>
                   <p className="text-[14px] text-end">
@@ -95,7 +95,7 @@ export const PlayerProfile = () => {
               
             </div>
             
-            <div className="grid grid-cols-2 gap-8 w-10/12 mx-auto mt-8 max-sm:w-11/12 max-sm:grid-cols-1">
+            <div className="grid grid-cols-2 gap-8 w-10/12 mx-auto mt-8 max-md:w-11/12 max-sm:grid-cols-1">
 
               {/* Nacionalidad */}
               <div className="flex">
@@ -206,7 +206,7 @@ export const PlayerProfile = () => {
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-              className="mx-auto max-sm:w-11/12 max-sm:h-[200px]"
+              className="mx-auto max-md:w-11/12 max-sm:h-[200px]"
             ></iframe>
           </div>
         : ""}

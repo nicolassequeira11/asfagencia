@@ -29,7 +29,7 @@ export const PlayersData = {
       ],
       ciudad: "Montevideo",
       edad: "20",
-      fechaNacimiento: "16/11/2005",
+      fechaNacimiento: "05/08/2004",
       altura: "1,91 m",
       peso: "",
       posicion1: "Defensa",
@@ -848,7 +848,7 @@ export const PlayersData = {
       peso: "",
       posicion1: "Defensa",
       posicion2: "",
-      pierna: "-",
+      pierna: "Derecha",
       clubActual: [
         {
           nombre: "Moca FC",
@@ -891,8 +891,8 @@ export const PlayersData = {
       altura: "-",
       peso: "",
       posicion1: "Mediocentro",
-      posicion2: "-",
-      pierna: "-",
+      posicion2: "",
+      pierna: "Derecha",
       clubActual: [
         {
           nombre: "Carolina Core",

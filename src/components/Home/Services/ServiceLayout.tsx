@@ -22,7 +22,7 @@ export const ServicesLayout = () => {
   return(
     <div>
       <div 
-        className="flex max-sm:flex-col my-8 gap-14 justify-center font-montserrat"
+        className="flex max-lg:flex-col my-8 gap-14 justify-center font-montserrat"
       >
         {services.map((item:{title:string, img:string}, index:number) => (
           <div key={index}>

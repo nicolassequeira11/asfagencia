@@ -6,26 +6,26 @@ export const About = () => {
 
       <div 
         className="flex w-9/12 mx-auto py-12 gap-12 justify-center
-          max-sm:flex-col-reverse max-sm:w-11/12"
+          max-md:flex-col-reverse max-sm:w-11/12"
       >
 
         {/* Descripción Alejandro Sobrino */}
         <div 
-          className="w-[50rem] my-auto max-sm:w-11/12 max-sm:mx-auto max-sm:-mt-4"
+          className="w-[50rem] my-auto max-md:w-11/12 max-md:mx-auto max-md:-mt-4"
         >
-          <p className="font-[700] text-[24px] max-sm:text-center">
+          <p className="font-[700] text-[24px] max-md:text-center">
             Dr. Alejandro Sobrino
           </p>
-          <p className="font-[400] text-[18px] max-sm:text-center">
+          <p className="font-[400] text-[18px] max-md:text-center">
             Abogado Especialista en Derecho Deportivo | Agente FIFA
           </p>
-          <p className="mt-2 max-sm:text-justify max-sm:mx-auto max-sm:mt-6">
+          <p className="mt-2 max-md:text-justify max-md:mx-auto max-md:mt-6">
             Alejandro Sobrino es un reconocido agente de fútbol con una sólida formación en derecho deportivo. Su experiencia como abogado especializado le permite ofrecer un enfoque integral y estratégico en la representación de atletas, asegurando que sus intereses estén siempre protegidos.
           </p>
         </div>
 
         {/* Foto Alejandro Sobrino */}
-        <div className="w-[17rem] max-sm:w-6/12 max-sm:mx-auto">
+        <div className="w-[17rem] max-md:w-6/12 max-md:mx-auto">
           <img 
             src={AlejandroSobrino} 
             alt="Agente FIFA Alejandro Sobrino"

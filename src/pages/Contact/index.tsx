@@ -4,7 +4,7 @@ import { FaInstagram } from "react-icons/fa";
 
 export const ContactPage = () => {
   return(
-    <div className="mt-[94px] max-md:mt-[84px] mb-20 font-montserrat">
+    <div className="mt-[94px] max-lg:mt-[84px] mb-20 font-montserrat">
       <h1 
         className="font-[800] text-[30px] w-full mx-auto text-center 
           mb-6 bg-gold-base py-4 text-white max-sm:text-[24px]"
@@ -19,7 +19,7 @@ export const ContactPage = () => {
 
       {/* Botones */}
       <div 
-        className="grid grid-cols-3 w-8/12 mx-auto mt-8 gap-10 max-sm:grid-cols-1 max-sm:gap-6
+        className="grid grid-cols-3 w-8/12 mx-auto mt-8 gap-10 max-lg:grid-cols-1 max-lg:gap-6
           max-sm:w-10/12"
       >
         
@@ -29,7 +29,7 @@ export const ContactPage = () => {
             shadow-[rgba(0,0,0,_0.05)_0px_9px_30px] rounded-[25px] mt-6"
         >
           <a 
-            href="mailto:elcorreoquequieres@correo.com"
+            href="mailto:videoanalistacp@gmail.com"
             target="_blank"
             className="mx-auto"
           >
@@ -53,15 +53,13 @@ export const ContactPage = () => {
           className="w-full flex gap-10 flex-col px-4 py-6 mx-auto text-center 
             shadow-[rgba(0,0,0,_0.05)_0px_9px_30px] rounded-[25px] mt-6"
         >
-          <a 
-            href="mailto:elcorreoquequieres@correo.com"
-            target="_blank"
+          <div 
             className="mx-auto"
           >
             <FaPhoneFlip 
               className="text-white bg-gold-base p-3 rounded-full text-[70px] mx-auto mb-5"
             />
-            <p>+598 099 111 222</p>
+            <p>+598 097 774 358</p>
             
             {/* <a 
               href="mailto:sadasd@hotmail.com"
@@ -70,7 +68,7 @@ export const ContactPage = () => {
             >
               Llamar
             </a> */}
-          </a>
+          </div>
         </div>
 
         {/* Botón Instagram */}
@@ -79,7 +77,7 @@ export const ContactPage = () => {
             shadow-[rgba(0,0,0,_0.05)_0px_9px_30px] rounded-[25px] mt-6"
         >
           <a 
-            href="mailto:elcorreoquequieres@correo.com"
+            href="https://www.instagram.com/drsobrinoalejandro/"
             target="_blank"
             className="mx-auto"
           >

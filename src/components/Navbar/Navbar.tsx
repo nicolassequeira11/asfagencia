@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { FaInstagram } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
 
@@ -41,7 +41,7 @@ export const Navbar = () => {
   return(
     <header>
       <nav 
-        className="flex py-6 text-center font-montserrat max-sm:justify-between
+        className="flex py-6 text-center font-montserrat max-lg:justify-between
           fixed top-0 w-full z-50 shadow-md bg-white bg-opacity-95"
       >
 
@@ -50,13 +50,13 @@ export const Navbar = () => {
           to="/" 
           className="w-1/4 my-auto max-sm:w-fit max-sm:ms-6"
         >
-          <p className="my-auto text-[30px] font-[800] max-sm:text-[20px]">
+          <p className="my-auto text-[30px] font-[800] max-lg:text-[20px]">
             ASF Agencia
           </p>
         </Link>
 
         {/* Links */}
-        <div className="w-2/4 my-auto grid grid-cols-5 max-sm:hidden">
+        <div className="w-2/4 lg:w-8/12 my-auto grid grid-cols-5 max-lg:hidden">
           {links.map((item, index) => (
             <Link 
               key={index} 
@@ -69,9 +69,9 @@ export const Navbar = () => {
         </div>
 
         {/* Redes */}
-        <div className="w-1/4 flex mx-auto justify-center gap-[10px] my-auto max-sm:hidden">
+        <div className="w-1/4 lg:w-2/12 flex mx-auto justify-center gap-[10px] my-auto max-lg:hidden">
           <a 
-            href="" 
+            href="https://www.instagram.com/drsobrinoalejandro/" 
             target="_blank" 
             className="bg-gold-base hover:bg-gold-dark p-2 rounded-full text-white"
           >
@@ -80,11 +80,11 @@ export const Navbar = () => {
             />
           </a>
           <a 
-            href="" 
+            href="mailto:videoanalistacp@gmail.com" 
             target="_blank" 
             className="bg-gold-base hover:bg-gold-dark p-2 rounded-full text-white"
           >
-            <FaWhatsapp 
+            <MdEmail 
               className="size-5" 
             />
           </a>
@@ -93,7 +93,7 @@ export const Navbar = () => {
         {/* Menú Mobile */}
         <GiHamburgerMenu 
           onClick={handleMenuOpen}
-          className="my-auto w-fit text-[35px] text-black-base me-6 max-sm:flex hidden
+          className="my-auto w-fit text-[35px] text-black-base me-6 max-lg:flex hidden
             hover:text-gold-base"
         />
         
